@@ -98,6 +98,8 @@ def num_points_scored(player)
       if data == team_name
         teams[:players].each do |a, b|
           b.each do |c, d|
+            if c == :number 
+              numbers_array.push(d)
           binding.pry 
           
           end
