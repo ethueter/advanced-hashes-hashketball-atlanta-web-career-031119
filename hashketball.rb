@@ -137,11 +137,18 @@ def num_points_scored(player)
   end 
          
 def  big_shoe_rebounds
+  name = nil 
   list = shoe_size_list
   game_hash.each do |location, teams|
       teams[:players].each do |attribute, data|
         data.each do |stat, value|
-          
+          if value == #{list.last}
+          name = attribute
+        end
+      end
+    end
+  end
+  name
 end
          
          
