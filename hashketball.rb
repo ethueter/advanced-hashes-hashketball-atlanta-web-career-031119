@@ -142,6 +142,7 @@ def  big_shoe_rebounds
   game_hash.each do |location, teams|
       teams[:players].each do |attribute, data|
         data.each do |stat, value|
+          binding.pry 
           if value == #{list.last}
           name = attribute
         end
