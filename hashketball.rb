@@ -97,7 +97,7 @@ def num_points_scored(player)
     teams.each do |attribute, data|
        
       if data.include?(team_name)
-        data.each do |player, stats|
+        attribute.each do |player, stats|
       
         binding.pry 
         data.each do |stat, number|
