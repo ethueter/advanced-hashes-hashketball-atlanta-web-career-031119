@@ -122,6 +122,17 @@ def num_points_scored(player)
   end 
   
   def big_shoe_rebounds
+    shoe_sizes = [] 
+    game_hash.each do |location, teams|
+      teams[:players].each do |attribute, data|
+        data.each do |stat, value|
+          if stat == :shoe 
+            shoe_sizes.push(value)
+            binding.pry 
+          end
+        end
+      end
+    end 
   end 
          
          
