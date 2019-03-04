@@ -99,7 +99,7 @@ def num_points_scored(player)
       if attribute == :players
         data.each do |stat, number|
           if stat == :number 
-            new_array.push(number)
+            numbers_array.push(number)
           end
         end
       end
