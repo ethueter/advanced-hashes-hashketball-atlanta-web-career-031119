@@ -94,16 +94,11 @@ def num_points_scored(player)
  def player_numbers(team_name)
    numbers_array = []
    game_hash.each do |location, teams|
-       if teams.include?(team_name)
-         teams.each do |attribute, data|
-           data.each do |stat, number|
-             if stat == :number 
-             new_array.push(number)
-           end
-         end
-       end
-     end 
-     binding.pry
+    teams.each do |attribute, data|
+      data.each do |stat, number|
+        binding.pry 
+      end
+    end 
    end
    numbers_array
  end 
