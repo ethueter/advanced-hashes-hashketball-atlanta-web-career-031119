@@ -94,7 +94,9 @@ def num_points_scored(player)
  def player_numbers(team_name)
    numbers_array = []
    game_hash.each do |location, teams|
+     binding.pry 
     teams.each do |attribute, data|
+      binding.pry 
       data.each do |stat, number|
         binding.pry 
       end
