@@ -128,7 +128,6 @@ def num_points_scored(player)
         data.each do |stat, value|
           if stat == :shoe 
             shoe_sizes.push(value)
-            binding.pry 
           end
         end
       end
