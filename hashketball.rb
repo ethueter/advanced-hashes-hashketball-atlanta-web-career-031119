@@ -143,7 +143,7 @@ def  big_shoe_rebounds
         data.each do |s, value|
           
           if value == #{list.last}
-           
+           rebounds = data[:rebounds]
         end
       end
     end
