@@ -112,7 +112,7 @@ def num_points_scored(player)
   def player_stats(player_name)
     players_stats = nil 
     game_hash.each do |location, teams|
-      teams.each do |attribute, data|
+      teams[:players].each do |attribute, data|
         binding.pry 
       end
     end 
