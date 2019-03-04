@@ -117,7 +117,7 @@ def num_points_scored(player)
           players_stats = data
         end
       end
-      player_name + players_stats
+      players_stats
     end 
         
   end 
