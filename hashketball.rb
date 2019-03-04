@@ -97,6 +97,7 @@ def num_points_scored(player)
     teams.each do |attribute, data|
       if data == team_name
         numbers_array.push(teams[:players][:number])
+        binding.pry 
         
     end 
    end 
