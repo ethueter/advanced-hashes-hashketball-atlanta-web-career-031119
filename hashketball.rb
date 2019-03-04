@@ -98,7 +98,8 @@ def num_points_scored(player)
       if data == team_name
         teams.each do |a, b|
         binding.pry 
-      end 
+      end
+    end 
    end 
    end
    numbers_array.sort 
