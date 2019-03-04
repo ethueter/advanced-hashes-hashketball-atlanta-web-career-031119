@@ -99,8 +99,7 @@ def num_points_scored(player)
         teams[:players].each do |a, b|
           b.each do |stat, value|
           binding.pry 
-          if a == :number 
-            numbers_array.push(b)
+          
           end
         end 
         
