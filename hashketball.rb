@@ -121,7 +121,7 @@ def num_points_scored(player)
        players_stats 
   end 
   
-  def big_shoe_rebounds
+  def shoe_size_list
     shoe_sizes = [] 
     game_hash.each do |location, teams|
       teams[:players].each do |attribute, data|
@@ -133,9 +133,16 @@ def num_points_scored(player)
         end
       end
     end 
+    shoe_sizes.sort 
   end 
          
-         
+def  big_shoe_rebounds
+  list = shoe_size_list
+  game_hash.each do |location, teams|
+      teams[:players].each do |attribute, data|
+        data.each do |stat, value|
+          
+end
          
          
          
