@@ -100,11 +100,9 @@ def num_points_scored(player)
           b.each do |c, d|
             if c == :number 
               numbers_array.push(d)
-          binding.pry 
-          
+            end 
           end
-        end 
-        
+        end
     end 
    end 
    end
