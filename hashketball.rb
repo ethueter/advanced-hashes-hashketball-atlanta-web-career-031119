@@ -96,13 +96,16 @@ def num_points_scored(player)
    game_hash.each do |location, teams|
     teams.each do |attribute, data|
       if data == team_name
-        numbers_array.push(teams[:players][:number])
-        binding.pry 
+        teams[:players].each do |a, b|
+          if a == :number 
+            numbers_array.push(b)
+          end
+        end 
         
     end 
    end 
    end
-   numbers_array 
+   numbers_array.sort
  end 
  
        
